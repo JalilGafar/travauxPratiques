@@ -9,33 +9,20 @@ header{
     width: 100%;
     background-color: rgb(208, 208, 209);
     box-sizing: border-box;
-    /* position: fixed;
-    z-index: 1; */
 }
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* gap: 5px; */
     padding: 12px;
 }
 li, a{
     text-decoration: rgb(249, 17, 17);
     list-style: none;
     color: rgb(237, 238, 241);
-	font-family: white;
-
-
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*
-body{
-    background-color: wheat;
-    font-family: "";
-}
-/* header>div>nav>ul>li>a:hover{
-    background-color: rgba(0, 0, 0, 0.205);
-    height: 40px;
-} */
+
 header>div>nav>ul>li:hover{
     font-weight: bold;
     border-radius: 2.5px;
@@ -43,8 +30,10 @@ header>div>nav>ul>li:hover{
     
 }   
 
+
 body {
-	background: #f6f5f7;
+    background: url(images/tortue.jpg) center/cover;
+    min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -60,7 +49,6 @@ body {
 	min-height: 480px;
 	width: 768px;
 	max-width: 100%;
-	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 8px 24px  rgba(0, 32, 63, .45),
 		  0 8px 8px rgba(0, 32, 63, .45);
@@ -110,7 +98,7 @@ body {
 }
 
 form {
-	background-color: #fff;
+	background-color: #291f1fd3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -120,13 +108,19 @@ form {
 	text-align: center;
 }
 
+form h1 {
+    color: #ffffff;
+}
+
 input {
-	background-color: #adf0d1;
+	background-color: #f94c29;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+    color: #ffffff;
 }
+
 
 button.ghost {
 	background-color: transparent;
@@ -167,8 +161,8 @@ button:active {
 	margin: 0 4px;
 	height: 40px;
 	width: 40px;
-	border-radius: 50%;
-	background-color: #89c814;
+	border-radius: 20%;
+	background-color: #0576ff;
 	border: 1px solid rgba(0, 32, 63, .45);
 }
 
@@ -185,7 +179,7 @@ a {
 	text-decoration: none;
 	font-size: 18px;
 	margin: 8px 0 16px;
-	color: #460202;
+	color: #ffffff;
 }
 
 .overlay-container {
@@ -205,7 +199,7 @@ a {
 
 .overlay {
 	background: linear-gradient(to right, #adf0d1, #e7f0fd);
-	background: #adf0d1;
+	background: #f94c29cb;
 	color: #00203f;
 	position: relative;
 	left: -100%;
