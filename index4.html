@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
- <link rel="stylesheet" href="jalil.css" />
+    <link rel="stylesheet" href="css/style4.css" />
     <title>Exemple</title>
 </head>
 <body>
-    <div class="container">
-   <h1>Background 
-</h1>
-    </div>
+    <header>
+        <h1> Des exemples de manipulation du DOM </h1>
+    </header>
+    <main>
+        <div class="exemple">
+            <h3>Remplacement du text par la selection du Id</h3>
+            <p id="demo"> Ici le texte initial.</p>
+
+            <button onclick="byIdfunc()">ById replace</button>
+            <button onclick="reStart()">Annuler</button>
+            <script>
+                function byIdfunc() {
+                    document.getElementById("demo").innerHTML= "Nouveau texte."
+                }
+                function reStart() {
+                    document.getElementById("demo").innerHTML= "Ici le texte initial."
+                }
+            </script>
+        </div>
+        <div class="exemple">
+            <h3>Changer la valeur de l'attribue "src" de la balise 'img'.</h3>
+            <p> Ici l'image initial <span><img id="photo" src="images/tortue.jpg" alt="" style="height: 100px;"></span>.</p>
+
+            <button onclick="atrfunc()">replace Attribut</button>
+            <button onclick="reStart1()">Annuler</button>
+            <script>
+                function atrfunc() {
+                    document.getElementById("photo").src = "images/drone.jpg"
+                }
+                function reStart1() {
+                    document.getElementById("photo").src = "images/tortue.jpg"
+                }
+            </script>
+        </div>
+    </main>
 </body>
 </html>
