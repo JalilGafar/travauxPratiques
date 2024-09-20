@@ -24,7 +24,7 @@
                 }
             </script>
         </div>
-        <div class="exemple">
+        <div class="exemple pair">
             <h3>Changer la valeur de l'attribue "src" de la balise 'img'.</h3>
             <p> Ici l'image initial <span><img id="photo" src="../images/tortue.jpg" alt="" style="height: 100px;"></span>.</p>
 
@@ -53,6 +53,31 @@
                         alert("Veuillez entrer un nom !");
                         return false;
                     }
+                }
+            </script>
+        </div>
+        <div class="exemple">
+            <h3>Validation de Formulaire pour les champs vides.</h3>
+            <p><button onclick="myMove()">Click Me</button></p> 
+            <div id ="container">
+                <div id ="animate"></div>
+            </div>
+            <script>
+                function myMove() {
+                let id = null;
+                const elem = document.getElementById("animate");   
+                let pos = 0;
+                clearInterval(id);
+                id = setInterval(frame, 5);
+                function frame() {
+                    if (pos == 600) {
+                    clearInterval(id);
+                    } else {
+                    pos = pos + 5; 
+                    //elem.style.top = pos + "px"; 
+                    elem.style.left = pos + "px"; 
+                    }
+                }
                 }
             </script>
         </div>
