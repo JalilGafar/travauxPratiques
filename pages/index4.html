@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="css/style4.css" />
+    <link rel="stylesheet" href="../css/style4.css" />
     <title>Exemple</title>
 </head>
 <body>
@@ -26,16 +26,33 @@
         </div>
         <div class="exemple">
             <h3>Changer la valeur de l'attribue "src" de la balise 'img'.</h3>
-            <p> Ici l'image initial <span><img id="photo" src="images/tortue.jpg" alt="" style="height: 100px;"></span>.</p>
+            <p> Ici l'image initial <span><img id="photo" src="../images/tortue.jpg" alt="" style="height: 100px;"></span>.</p>
 
             <button onclick="atrfunc()">replace Attribut</button>
             <button onclick="reStart1()">Annuler</button>
             <script>
                 function atrfunc() {
-                    document.getElementById("photo").src = "images/drone.jpg"
+                    document.getElementById("photo").src = "../images/drone.jpg"
                 }
                 function reStart1() {
-                    document.getElementById("photo").src = "images/tortue.jpg"
+                    document.getElementById("photo").src = "../images/tortue.jpg"
+                }
+            </script>
+        </div>
+        <div class="exemple">
+            <h3>Validation de Formulaire pour les champs vides.</h3>
+            <form id="myForm" action="" onsubmit="return validateForm()">
+                Nom : <input type="text" name="fname" id="">
+                Prénom : <input type="text" name="pname" required>
+                <input type="submit" value="send">
+            </form>
+            <script>
+                function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                        alert("Veuillez entrer un nom !");
+                        return false;
+                    }
                 }
             </script>
         </div>
