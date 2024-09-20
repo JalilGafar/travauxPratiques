@@ -1,3 +1,17 @@
+a{
+    background-color: rgb(64, 95, 95);
+    color: rgb(21, 19, 19);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+a:hover, a:active {
+    background: gray;
+}
+
 .exemple{
     border: 1px solid;
     padding: 10px;
