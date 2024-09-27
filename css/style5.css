@@ -100,3 +100,17 @@ li{
 .edit-button:hover {
     background-color: orange;
 }
+
+.but{
+    background-color: rgb(234, 42, 42);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.but:hover, .but:active {
+    background: rgb(65, 13, 13);
+}
